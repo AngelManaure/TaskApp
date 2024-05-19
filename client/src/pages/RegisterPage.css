@@ -1,0 +1,146 @@
+.registerFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 400;
+  margin: auto;
+  text-align: center;
+}
+
+.registerForm {
+  background: #f5f4f4;
+  border-radius: 1.7rem 1.7rem 0 0;
+  padding: 0.5rem;
+}
+
+.registerInputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerInputGroup label {
+  font-size: 1.3rem;
+}
+
+.registerInputGroup input {
+  width: 16rem;
+  height: 2.3rem;
+  background: #f5f5f5;
+  margin: .8rem auto;
+  font-size: 1.3rem;
+  border: 2px outset rgb(90, 154, 238);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+
+.registerButton {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: #429ed4;
+  color: #ffffff;
+  border-radius: 1.1rem;
+  margin-bottom: 0.4rem;
+  transition: background .4s;
+}
+
+.registerButton:hover {
+  background: #d92df0;
+}
+
+.formRedirect {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin: .3rem auto;
+}
+
+.redirectLink{
+  margin-left: .5rem;
+  color: #0d6588;
+}
+
+.registerAbout {
+  background: #81b3ff;
+  color: #ffffff;
+  border-radius: 0 0 .6rem .6rem;
+  padding: 0.5rem;
+}
+
+.registerAbout div{
+    background-color: transparent;
+    margin: .7rem auto;
+}
+
+.registerAbout h1{
+    background: #ffffff;
+    color: #2f8cb1;
+    display: inline;
+    padding: .2rem;
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+}
+
+.registerAbout span {
+    background-color: #3988ff;
+    color: #ffffff;
+    font-size: 2.1rem;
+    font-weight: 600;
+    padding: .2rem;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+
+.emailError{
+  height: 3rem;
+  width: 13rem;
+  margin: .2rem auto;
+  background-color: rgb(255, 52, 52);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.textErrors {
+  color: rgb(238, 27, 27);
+  font-size: 1.1rem;
+  margin: 0 .3rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .registerFormContainer{
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+
+  .registerForm{
+    background: #ddeaee;
+    border-radius: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: 27rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registerAbout{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 27rem;
+    width: 20rem;
+    border-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}

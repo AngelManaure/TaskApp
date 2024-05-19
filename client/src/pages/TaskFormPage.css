@@ -1,0 +1,66 @@
+.formContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.taskForm{
+    background: #f7f5f5;
+    color: rgb(14, 13, 13);
+    width: 98%;
+}
+
+.taskFormInputGroup{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 1rem;
+}
+
+.taskFormInputGroup label {
+    background: #cecdcd;
+    font-size: 1.4rem;
+    margin: .4rem;
+    padding: .2rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.taskFormInputGroup input,
+.taskFormInputGroup textarea {
+    font-family: cursive;
+    font-size: 1.2rem;
+    margin: 0 .4rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    border: 2px inset rgb(160, 208, 223);
+}
+
+.taskFormInputGroup input {
+    height: 2rem;
+
+}
+
+.taskFormButton{
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #4d93ee;
+    color: #ffffff;
+    border-radius: .8rem;
+    transition: all .4s;
+}
+
+.taskFormButton:hover {
+    background-color: #346fbd;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .formContainer{
+        margin: 2rem auto;
+        width: 31rem;
+    }
+}

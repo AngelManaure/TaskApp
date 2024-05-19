@@ -1,0 +1,63 @@
+.addTask {
+    display: flex;
+    margin: .5rem;
+}
+
+.addTaskButton {
+    color: #ffffff;
+    background-color: #b1aeae;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: .5rem;
+    width: 100%;
+    transition: background .4s;
+}
+
+.addTaskButton:hover{
+    background: #757272;
+}
+
+.addTaskButton p {
+    font-size: 1.4rem;
+    
+}
+
+.taskListContainer{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .addTask{
+        display: flex;
+        justify-content: center;
+    }
+    .addTaskButton{
+        width: 30rem;
+    }
+    .taskListContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .addTaskButton{
+        margin: 1rem;
+        width: 22rem;
+    }
+
+    .taskListContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }   
+}
+
+@media screen and (min-width: 1024px) {
+    .taskListContainer{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

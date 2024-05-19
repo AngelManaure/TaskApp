@@ -1,0 +1,44 @@
+.TaskCard {
+ background: #ffffff;
+ margin: .2rem;
+ padding: 0.7rem;
+ display: flex;
+ flex-direction: column;
+ transition: all .5s;
+}
+
+.TaskCard:hover {
+    background-color: #f7e9f7;
+}
+
+.topCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topCard div .button{
+    margin: .3rem;
+    font-size: 1.2rem;
+    padding: .2rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.topCard div .deleteButton{
+    background-color: #fadec7;
+}
+
+.topCard div .updateButton{
+    background-color: #c7e3fa;
+}
+
+.topCard div .deleteButton:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+.topCard div .updateButton:hover{
+    background-color: rgb(0, 174, 255);
+    color: white;
+}
